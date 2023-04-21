@@ -1,0 +1,33 @@
+* {
+    margin: 10px; /*margin establece el margen para los cuatro lados*/
+    padding: 5px; /*padding establece el espacio de relleno*/
+    background-color: white; /*cambia el color de relleno*/
+    font-family: Verdana; /*cambia el tipo de letra*/
+}
+
+body, header, nav, div, main, footer, figure {
+    border: 2px solid;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: steelblue;
+  }
+  
+  .logo {
+    background: grey;
+  }
+
+  .menu {
+        background: black;
+  }
+
+.grid-container {
+    display: grid;
+}
+    .item{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: yellow;
+}
