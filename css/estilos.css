@@ -25,6 +25,7 @@ body, header, nav, div, main, footer, figure {
 
 .grid-container {
     display: grid;
+    background: red;
 }
     .item{
     grid-column-start: 1;
