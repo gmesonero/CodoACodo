@@ -11,6 +11,7 @@ body, header, nav, div, main, footer, figure {
 
 .container {
     display: flex;
+    justify-content: left;
     flex-direction: row;
     background: steelblue;
   }
