@@ -6,7 +6,7 @@
 }
 
 body, header, nav, div, main, footer, figure {
-    border: 2px solid;
+    border: 0px solid;
 }
 
 .container {
@@ -16,7 +16,7 @@ body, header, nav, div, main, footer, figure {
   }
   
   .logo {
-    background: grey;
+    background:steelblue;
   }
 
   .menu {
@@ -29,7 +29,7 @@ body, header, nav, div, main, footer, figure {
     display: grid;
     grid-template: 100px 1fr 100px / 400px 1fr;
     grid-gap: 10px;
-    background-color: blue;
+    background-color: steelblue;
     padding: 10px;
 }
 .grid-container > section{
