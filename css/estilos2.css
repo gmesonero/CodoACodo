@@ -41,3 +41,21 @@
     color: white;
     border-radius: 10px;
 }
+
+.menu_container{
+    display: grid;
+    grid-gap: 20px;
+    height: 100vh;
+}
+
+.inicio{
+    background-color: white;
+
+}
+
+.aire{
+    background-color: white;
+    padding: 10px;
+    color: red;
+    border-radius: 10px;
+}
