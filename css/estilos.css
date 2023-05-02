@@ -2,7 +2,7 @@
     margin: 10px; /*margin establece el margen para los cuatro lados*/
     padding: 5px; /*padding establece el espacio de relleno*/
     background-color: white; /*cambia el color de relleno*/
-    font-family: Verdana; /*cambia el tipo de letra*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*cambia el tipo de letra*/
 }
 
 body, header, nav, div, main, footer, figure {
