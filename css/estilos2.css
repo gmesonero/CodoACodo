@@ -29,27 +29,28 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .item {background: red;}
+    .container {background: red;}
+    .item {font-size: 10px;}
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-    .item {background: green;}
+    .container {background: green;}
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .item {background: blue;}
+    .container {background: blue;}
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .item {background: #1B6EB4;}
+    .container {background: #1B6EB4;}
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
+    .container {background:white;}
   }
 
 .logo{
@@ -109,4 +110,14 @@ a {
 a:hover {
     color:black;
     background-color:lightgray;
+}
+
+.contenido > iframe >h2 {
+    grid-area: contenido;
+    justify-content: space-around;
+    font-family: "Crimson";
+    font-size: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
