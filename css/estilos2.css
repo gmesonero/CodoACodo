@@ -9,11 +9,6 @@
                          "footer footer";
     grid-gap: 10px;
     height: 100vh;
-    /* align-items: stretch;
-    align-content: end;
-    justify-items: auto;
-    justify-content: space-around; */
-
 }
 
 .item{
@@ -23,9 +18,9 @@
     border-radius: 10px;
     display: grid;
     font-family: "Literata";
-    font-size: 100%;
+    font-size: 1.5rem;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -34,22 +29,22 @@
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     .container {background: green;}
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .container {background: blue;}
   } 
-  
+
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .container {background: #1B6EB4;}
-  } 
+  }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .container {background:white;}
   }
 
@@ -57,13 +52,13 @@
     grid-area: logo;
     justify-content: start;
     background-color: white;
+    transition: width 2s, height 2s, transform 2s;
 }
 
 .titulo{
     grid-area: titulo;
     font-family: "Literata";
-    font-size: 500%;
-
+    font-size: 5rem;
     justify-content: center;
     align-content: center;
 }
@@ -80,13 +75,14 @@
     font-family: "Crimson";
     font-size: 100%;
     justify-content: center;
-    align-items: center;
     align-content: center;
 }
 
 .footer{
     grid-area: footer;
-
+    display: inline;
+    justify-content: center;
+    align-content: center;
 }
 
 #menu {
@@ -110,14 +106,4 @@ a {
 a:hover {
     color:black;
     background-color:lightgray;
-}
-
-.contenido > iframe >h2 {
-    grid-area: contenido;
-    justify-content: space-around;
-    font-family: "Crimson";
-    font-size: 100%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
