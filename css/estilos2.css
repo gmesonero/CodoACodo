@@ -4,11 +4,12 @@ html {
 
 .container{
     display: grid;
-    grid-template: 200px 50px 1fr 4rem / 200px 1fr;
-    grid-template-areas: "logo titulo"
-                         "header header"
-                         "contenido contenido"
-                         "footer footer";
+    grid-template: 200px 50px 1fr 1fr 4rem / 200px 1fr 1fr 1fr;
+    grid-template-areas: "logo titulo titulo titulo"
+                         "header header header header"
+                         "contenido contenido contenido contenido"
+                         "mapa mapa iframe iframe"
+                         "footer footer footer footer";
     grid-gap: 10px;
     height: 100vh;
     font-size: 100%;
@@ -20,7 +21,7 @@ html {
     color: #1B6EB4;
     border-radius: 10px;
     display: grid;
-    font-family: "Literata";
+    font-family:'Barlow Condensed', sans-serif;
     justify-content: center;
     align-items: center;
 }
@@ -84,7 +85,7 @@ html {
 
 .titulo{
     grid-area: titulo;
-    font-family: "Literata";
+    font-family: ;
     font-size: 4rem;
     justify-content: center;
     align-content: center;
@@ -94,6 +95,7 @@ html {
     justify-content: center;
     align-content: center;
     background-color: #eb7608;
+    font-family:'Barlow Condensed', sans-serif;
 }
 
 .contenido{
@@ -106,15 +108,24 @@ html {
     align-items: center;
 }
 
+.mapa{
+    grid-area: mapa;
+}
+
+.iframe{
+    grid-area: iframe;
+}
+
 .footer{
     grid-area: footer;
+    display:inline;
     text-align: center;
 }
 
 #menu {
     font-family:Arial;
     font-weight:bold;
-    font-family: "Literata";
+    font-family:'Barlow Condensed', sans-serif;
     font-size: 30px;
 }
 
@@ -130,14 +141,7 @@ a {
 }
 
 a:hover {
-    color:black;
-    background-color:lightgray;
-}
-
-.footer div h4 svg{
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    color:#464646;
 }
 
 .logo img{
