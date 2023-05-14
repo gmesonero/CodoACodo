@@ -26,57 +26,6 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
-    .container .titulo{
-    font-size: 2rem;
-    }
-    .container .logo img{
-    width: 100%;
-    text-align: center;
-    }
-    .container .header ul li{
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
-    }
-
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .container .titulo{
-    font-size: 3rem;}
-    .container .header ul li{
-    font-size: 1.5rem;
-    }
-
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .container .titulo{
-        font-size: 5rem;}
-        .container .header ul li{
-        font-size: 1.5rem;}
-  } 
-
-  /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .container .titulo{
-        font-size: 5rem;}
-        .container .header ul li{
-        font-size: 1.5rem;}
-  }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .container .titulo{
-    font-size: 5rem;}
-    .container .header ul li{
-    font-size: 1.5rem;}
-
-  }
-
 .logo{
     grid-area: logo;
     justify-content: start;
@@ -85,8 +34,7 @@
 
 .titulo{
     grid-area: titulo;
-    font-family: ;
-    font-size: 4rem;
+     font-size: 4rem;
     justify-content: center;
     align-content: center;
 }
@@ -164,4 +112,70 @@ width: 100%;
     width: 100%;
     object-fit: cover;
     scroll-snap-align: center;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .container{
+        display: grid;
+        grid-template: 50px 1fr 2fr 2fr 2fr 4rem / 25% 75%;
+        grid-template-areas: "logo titulo"
+                             "logo header"
+                             "contenido contenido"
+                             "mapa mapa"
+                             "iframe iframe"
+                             "footer footer";
+        grid-gap: 5px;
+        height: 100vh;
+        font-size: 100%;
+    }
+
+    .container .titulo{
+    font-size: 1.5rem;
+    }
+    .container .logo img{
+    width: 100%;
+    text-align: center;
+    }
+    .container .header ul li{
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    }
+
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container .titulo{
+    font-size: 3rem;}
+    .container .header ul li{
+    font-size: 1.5rem;
+    }
+
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container .titulo{
+        font-size: 5rem;}
+        .container .header ul li{
+        font-size: 1.5rem;}
+  } 
+
+  /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container .titulo{
+        font-size: 5rem;}
+        .container .header ul li{
+        font-size: 1.5rem;}
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container .titulo{
+    font-size: 5rem;}
+    .container .header ul li{
+    font-size: 1.5rem;}
+
   }
