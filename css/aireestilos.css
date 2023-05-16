@@ -57,6 +57,16 @@
     align-items: center;
 }
 
+.contenido2{
+    grid-area: contenido;
+    justify-content: space-around;
+    font-family: "Crimson";
+    font-size: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .mapa{
     grid-area: mapa;
     margin-top: 20px;
@@ -119,10 +129,11 @@ width: 100%;
   @media only screen and (max-width: 767px) {
     .container{
         display: grid;
-        grid-template: 2rem 2rem 1fr 2fr 1fr 2rem / 25% 75%;
+        grid-template: 2rem 2rem 1fr 1fr 2fr 1fr 2rem / 25% 75%;
         grid-template-areas: "logo titulo"
                              "logo header"
                              "contenido contenido"
+                             "contenido2 contenido2"
                              "mapa mapa"
                              "iframe iframe"
                              "footer footer";
@@ -150,10 +161,11 @@ width: 100%;
 @media only screen and (min-width: 768px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 1fr 2fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
+                             "contenido2 contenido2 contenido2 contenido2"
                              "mapa mapa mapa mapa"
                              "iframe iframe iframe iframe"
                              "footer footer footer footer";
@@ -172,10 +184,11 @@ width: 100%;
 @media only screen and (min-width: 992px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 1fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
+                             "contenido2 contenido2 contenido2 contenido2"
                              "mapa mapa iframe iframe"
                              "footer footer footer footer";
         grid-gap: 5px;
