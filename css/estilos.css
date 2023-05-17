@@ -50,8 +50,9 @@
 .contenido{
     grid-area: contenido;
     justify-content: space-around;
-    font-family: "Crimson";
+    font-family:'Barlow Condensed', sans-serif;
     font-size: 100%;
+    text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -98,6 +99,9 @@ a:hover {
 width: 100%;
 }
 
+.contenido p {
+    text-align: right;
+}
 /* A partir de acá comienza el carrousel */
 
 .slider-container {
