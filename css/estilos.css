@@ -119,6 +119,53 @@ width: 100%;
     scroll-snap-align: center;
   }
 
+.contenedorTierra {
+    display: grid;
+    grid-template: 50px 1fr 1fr / 500px 500px 500px;
+    grid-template-areas: "tituloArt1 tituloArt2 tituloArt3"
+                         "imagen1 imagen2 imagen3"
+                         "contenidoArt1 contenidoArt2 contenidoArt2";
+    width: 100%;
+    height: 100vh;
+    font-family:'Barlow Condensed', sans-serif;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.tituloArt1{
+    grid-area: tituloArt1;
+    text-align: center;
+}
+.imagen1{
+    grid-area: imagen1;
+
+}
+.contenidoArt1{
+    grid-area: contenidoArt1;
+    text-align: center;
+}
+
+.tituloArt2{
+    grid-area: tituloArt2;
+}
+.imagen2{
+    grid-area: imagen2;
+}
+.contenidoArt2{
+    grid-area: contenidoArt2;
+}
+
+.tituloArt3{
+    grid-area: tituloArt3;
+}
+.imagen3{
+    grid-area: imagen3;
+}
+.contenidoArt3{
+    grid-area: contenidoArt3;
+}
+/* Fin del carrousel */
 
   @media only screen and (max-width: 767px) {
     .container{
