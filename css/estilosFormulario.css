@@ -50,7 +50,7 @@
 .contenido{
     grid-area: contenido;
     justify-content: space-around;
-    font-family: "Crimson";
+    font-family:'Barlow Condensed', sans-serif;
     font-size: 100%;
     justify-content: center;
     align-content: center;
