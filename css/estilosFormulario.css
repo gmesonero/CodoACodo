@@ -4,11 +4,10 @@
 
 .container{
     display: grid;
-    grid-template: 120px 1fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+    grid-template: 120px 1fr 10rem 4rem / 200px 1fr 1fr 1fr;
     grid-template-areas: "logo titulo titulo titulo"
                          "logo header header header"
                          "contenido contenido contenido contenido"
-                         "mapa mapa iframe iframe"
                          "footer footer footer footer";
     grid-gap: 5px;
     height: 100vh;
@@ -20,10 +19,7 @@
     padding: 10px;
     color: #1B6EB4;
     border-radius: 10px;
-    display: grid;
     font-family:'Barlow Condensed', sans-serif;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo{
@@ -34,36 +30,23 @@
 
 .titulo{
     grid-area: titulo;
-     font-size: 4rem;
-    justify-content: center;
-    align-content: center;
+    font-size: 4rem;
+    text-align: center;
 }
 .header{
     grid-area: header;
-    justify-content: center;
-    align-content: center;
     background-color: #eb7608;
     font-family:'Barlow Condensed', sans-serif;
     margin-right: 10px;
+    text-align: center;
 }
 
 .contenido{
     grid-area: contenido;
-    justify-content: space-around;
     font-family:'Barlow Condensed', sans-serif;
     font-size: 100%;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
+    text-align: center;
 
-.mapa{
-    grid-area: mapa;
-    margin-top: 20px;
-}
-
-.iframe{
-    grid-area: iframe;
 }
 
 .footer{
@@ -119,12 +102,10 @@ width: 100%;
   @media only screen and (max-width: 767px) {
     .container{
         display: grid;
-        grid-template: 2rem 2rem 1fr 2fr 1fr 2rem / 25% 75%;
+        grid-template: 2rem 2rem 1fr 2fr 2rem / 25% 75%;
         grid-template-areas: "logo titulo"
                              "logo header"
                              "contenido contenido"
-                             "mapa mapa"
-                             "iframe iframe"
                              "footer footer";
         grid-gap: 0.5%;
         height: 100vh;
@@ -150,12 +131,10 @@ width: 100%;
 @media only screen and (min-width: 768px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 1fr 2fr 1fr / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
-                             "mapa mapa mapa mapa"
-                             "iframe iframe iframe iframe"
                              "footer footer footer footer";
         grid-gap: 0.5%;
         height: 100vh;
@@ -172,11 +151,10 @@ width: 100%;
 @media only screen and (min-width: 992px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 3.5rem 2fr 1fr / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
-                             "mapa mapa iframe iframe"
                              "footer footer footer footer";
         grid-gap: 5px;
         height: 100vh;
