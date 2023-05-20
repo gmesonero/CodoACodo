@@ -8,6 +8,7 @@
     grid-template-areas: "logo titulo titulo titulo"
                          "logo header header header"
                          "contenido contenido contenido contenido"
+                         "contenido2 contenido2 contenido2 contenido2"
                          "mapa mapa iframe iframe"
                          "footer footer footer footer";
     grid-gap: 5px;
@@ -50,18 +51,20 @@
 .contenido{
     grid-area: contenido;
     justify-content: space-around;
-    font-family: "Crimson";
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 100%;
+    text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
 .contenido2{
-    grid-area: contenido;
+    grid-area: contenido2;
     justify-content: space-around;
-    font-family: "Crimson";
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 100%;
+    text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
