@@ -4,7 +4,8 @@
 
 .container{
     display: grid;
-    grid-template: 120px 1fr 4rem 20rem 20rem 2fr 4rem / 200px 20rem 20rem 20rem;
+    grid-template: 120px 50px 50px 400px 250px 1fr 4rem / 200px 1fr 1fr 1fr;
+    /* grid-template: 120px 1fr 4rem 20rem 20rem 2fr 4rem / 200px 1fr 1fr 1fr; */
     grid-template-areas: "logo titulo titulo titulo"
                          "logo header header header"
                          "tituloArt1 tituloArt2 tituloArt3 tituloArt4"
@@ -56,8 +57,6 @@
     font-size: 100%;
     text-align: center;
     justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 
 .imagen1{
@@ -73,13 +72,9 @@
 
 .contenidoArt1{
     grid-area: contenidoArt1;
-    justify-content: space-around;
     font-family:'Barlow Condensed', sans-serif;
     font-size: 100%;
     text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 
 .tituloArt2{
@@ -88,19 +83,11 @@
     font-family:'Barlow Condensed', sans-serif;
     font-size: 100%;
     text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 
 .imagen2{
     grid-area: imagen2;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+
 }
 
 .contenidoArt2{
@@ -120,9 +107,6 @@
     font-family:'Barlow Condensed', sans-serif;
     font-size: 100%;
     text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 }
 
 .imagen3{
@@ -220,6 +204,9 @@ a:hover {
 width: 100%;
 }
 
+.imagen2 img{
+    align-items: center;
+}
  /* @media only screen and (max-width: 767px) {
     .container{
         display: grid;
@@ -272,7 +259,7 @@ width: 100%;
      
   } 
  */
-Large devices (laptops/desktops, 992px and up)
+/* Large devices (laptops/desktops, 992px and up)
 @media only screen and (min-width: 992px) {
     .container{
         display: grid;
@@ -290,5 +277,5 @@ Large devices (laptops/desktops, 992px and up)
         font-size: 5rem;}
         .container .header ul li{
         font-size: 1.5rem;}
-  }
+  } */
   
