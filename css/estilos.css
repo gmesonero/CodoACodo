@@ -4,11 +4,12 @@
 
 .container{
     display: grid;
-    grid-template: 120px 1fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+    grid-template: 120px 1fr 2fr 2fr 1fr 4rem / 200px 1fr 1fr 1fr;
     grid-template-areas: "logo titulo titulo titulo"
                          "logo header header header"
                          "contenido contenido contenido contenido"
                          "mapa mapa iframe iframe"
+                         "articulo articulo weather-content"
                          "footer footer footer footer";
     grid-gap: 5px;
     height: 100vh;
@@ -65,6 +66,14 @@
 
 .iframe{
     grid-area: iframe;
+}
+
+.weather-content{
+    grid-area: weather-content;
+}
+
+.articulo{
+    grid-area: articulo;
 }
 
 .footer{
@@ -178,11 +187,12 @@ width: 100%;
 @media only screen and (min-width: 992px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 1fr 2fr 2fr 1fr 4rem / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
                              "mapa mapa iframe iframe"
+                             "articulo articulo weather-content weather-content"
                              "footer footer footer footer";
         grid-gap: 5px;
         height: 100vh;
