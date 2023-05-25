@@ -44,17 +44,14 @@
                     <label for="celular">Número de celular:</label>
                     <input type="tel" id="celular" name="celular" ><br><br>
                 
-                    <label>Message:</label>
-                    <input type="text" name="message" /><br><br>
+                    <label>Dejanos un mensaje:</label><br><br>
+                    <textarea name="Mensaje" rows="10" cols="50">Como te podemos ayudar?</textarea>
+                    <br><br>
                     
-                    <label for="domicilio">Domicilio:</label>
-                    <input type="text" id="domicilio" name="domicilio" required><br><br>
-                
-                    <button id="my-form-button">Submit</button>
+                    <button id="my-form-button">Enviar</button>
                     <p id="my-form-status"></p><br><br>
                 </form>
             
-                <!-- Place this script at the end of the body tag -->
                 <script>
                     var form = document.getElementById("Formulario_CodoACodo");
                     async function handleSubmit(event) {
