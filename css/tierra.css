@@ -4,13 +4,12 @@
 
 .container{
     display: grid;
-    grid-template: 120px 50px 50px 400px 250px 1fr 4rem / 200px 1fr 1fr 1fr;
-    /* grid-template: 120px 1fr 4rem 20rem 20rem 2fr 4rem / 200px 1fr 1fr 1fr; */
+    grid-template: 120px 1fr 2fr 1fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
     grid-template-areas: "logo titulo titulo titulo"
                          "logo header header header"
-                         "tituloArt1 tituloArt2 tituloArt3 tituloArt4"
-                         "imagen1 imagen2 imagen3 imagen4"
-                         "contenidoArt1 contenidoArt2 contenidoArt3 contenidoArt4"
+                         "contenido contenido contenido contenido"
+                         "titulo2 titulo2 titulo2 titulo2 "
+                         "contenido2 contenido2 contenido2 contenido2"
                          "mapa mapa iframe iframe"
                          "footer footer footer footer";
     grid-gap: 5px;
@@ -41,6 +40,14 @@
     justify-content: center;
     align-content: center;
 }
+
+.titulo2{
+    grid-area: titulo2;
+     font-size: 4rem;
+    justify-content: center;
+    align-content: center;
+}
+
 .header{
     grid-area: header;
     justify-content: center;
@@ -50,50 +57,10 @@
     margin-right: 10px;
 }
 
-.tituloArt1{
-    grid-area: tituloArt1;
+.contenido{
+    grid-area: contenido;
     justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-    justify-content: center;
-}
-
-.imagen1{
-    grid-area: imagen1;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    width: 95%;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.contenidoArt1{
-    grid-area: contenidoArt1;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-}
-
-.tituloArt2{
-    grid-area: tituloArt2;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-}
-
-.imagen2{
-    grid-area: imagen2;
-
-}
-
-.contenidoArt2{
-    grid-area: contenidoArt2;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 100%;
     text-align: center;
     justify-content: center;
@@ -101,68 +68,22 @@
     align-items: center;
 }
 
-.tituloArt3{
-    grid-area: tituloArt3;
+.contenido2{
+    grid-area: contenido2;
     justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-}
-
-.imagen3{
-    grid-area: imagen3;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 100%;
     text-align: center;
     justify-content: center;
     align-content: center;
     align-items: center;
+    display: flex;
+    flex: 1; 
+    border: black 1px solid; 
+    margin: 2px;
 }
 
-.contenidoArt3{
-    grid-area: contenidoArt3;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
 
-.tituloArt4{
-    grid-area: tituloArt4;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.imagen4{
-    grid-area: imagen4;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.contenidoArt4{
-    grid-area: contenidoArt4;
-    justify-content: space-around;
-    font-family:'Barlow Condensed', sans-serif;
-    font-size: 100%;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
 .mapa{
     grid-area: mapa;
     margin-top: 20px;
@@ -204,16 +125,33 @@ a:hover {
 width: 100%;
 }
 
-.imagen2 img{
-    align-items: center;
-}
- /* @media only screen and (max-width: 767px) {
+/* A partir de acá comienza el carrousel */
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+  }
+
+
+  @media only screen and (max-width: 767px) {
     .container{
         display: grid;
-        grid-template: 2rem 2rem 1fr 2fr 1fr 2rem / 25% 75%;
+        grid-template: 2rem 2rem 1fr 2rem 1fr 2fr 1fr 2rem / 25% 75%;
         grid-template-areas: "logo titulo"
                              "logo header"
                              "contenido contenido"
+                             "titulo2 titulo2"
+                             "contenido2 contenido2"
                              "mapa mapa"
                              "iframe iframe"
                              "footer footer";
@@ -237,14 +175,16 @@ width: 100%;
   }
   
 
-  /* Medium devices (landscape tablets, 768px and up)
+  /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 1fr 2fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
+                             "titulo2 titulo2 titulo2 titulo2 "
+                             "contenido2 contenido2 contenido2 contenido2"
                              "mapa mapa mapa mapa"
                              "iframe iframe iframe iframe"
                              "footer footer footer footer";
@@ -258,15 +198,17 @@ width: 100%;
         font-size: 1.5rem;}
      
   } 
- */
-/* Large devices (laptops/desktops, 992px and up)
+
+  /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 1fr 2fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
+                             "titulo2 titulo2 titulo2 titulo2 "
+                             "contenido2 contenido2 contenido2 contenido2"
                              "mapa mapa iframe iframe"
                              "footer footer footer footer";
         grid-gap: 5px;
@@ -277,5 +219,5 @@ width: 100%;
         font-size: 5rem;}
         .container .header ul li{
         font-size: 1.5rem;}
-  } */
+  }
   
