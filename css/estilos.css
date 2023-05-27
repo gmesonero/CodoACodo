@@ -9,7 +9,7 @@
                          "logo header header header"
                          "contenido contenido contenido contenido"
                          "mapa mapa iframe iframe"
-                         "articulo articulo weather-content"
+                         "articulo articulo weather-content weather-content"
                          "footer footer footer footer";
     grid-gap: 5px;
     height: 100vh;
@@ -74,6 +74,7 @@
 
 .articulo{
     grid-area: articulo;
+    text-align: center;
 }
 
 .footer{
@@ -131,15 +132,18 @@ width: 100%;
 
 /* Fin del carrousel */
 
+  /* Dispositivos pequeños (smartphones, etc. Max 767px) */
   @media only screen and (max-width: 767px) {
     .container{
         display: grid;
-        grid-template: 2rem 2rem 1fr 2fr 1fr 2rem / 25% 75%;
+        grid-template: 2rem 2rem 1fr 2fr 1fr 1fr 1fr 2rem / 25% 75%;
         grid-template-areas: "logo titulo"
                              "logo header"
                              "contenido contenido"
                              "mapa mapa"
                              "iframe iframe"
+                             "articulo articulo"
+                             "weather-content weather-content"
                              "footer footer";
         grid-gap: 0.5%;
         height: 100vh;
@@ -161,16 +165,18 @@ width: 100%;
   }
   
 
-  /* Medium devices (landscape tablets, 768px and up) */
+  /* Dispositivos medianos (tablets, etc. 768px y superiores) */
 @media only screen and (min-width: 768px) {
     .container{
         display: grid;
-        grid-template: 120px 1fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
+        grid-template: 120px 1fr 2fr 2fr 2fr 2fr 2fr 4rem / 200px 1fr 1fr 1fr;
         grid-template-areas: "logo titulo titulo titulo"
                              "logo header header header"
                              "contenido contenido contenido contenido"
                              "mapa mapa mapa mapa"
                              "iframe iframe iframe iframe"
+                             "articulo articulo articulo articulo"
+                             "weather-content weather-content weather-content weather-content"
                              "footer footer footer footer";
         grid-gap: 0.5%;
         height: 100vh;
@@ -183,7 +189,7 @@ width: 100%;
      
   } 
 
-  /* Large devices (laptops/desktops, 992px and up) */
+  /* Dispositivos grandes (laptops/PCs, 992px y superiores) */
 @media only screen and (min-width: 992px) {
     .container{
         display: grid;
